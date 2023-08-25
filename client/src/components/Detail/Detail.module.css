@@ -1,0 +1,26 @@
+.detail{
+    background-color:   rgba(156, 154, 5, 0.507);
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.397);
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.img{
+    margin-right: 5%;
+    align-items: center;
+}
+.detalles{
+    color: black;
+    margin-left: 5%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}

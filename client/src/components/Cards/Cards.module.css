@@ -1,20 +1,28 @@
-.home{
+.home {
     display: flex;
     flex-direction: column;
-    background-color:   rgba(156, 154, 5, 0.507);
+    background-color: rgb(213, 201, 188);
     min-height: 100vh;
 }
 
-.cards{
-    
-    display:flex;
+.cards {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.boton{
+.boton {
     background-color: rgba(240, 248, 255, 0.589);
     margin: auto;
+    margin-top: 5px;
     border-radius: 15%;
-
+}
+.select {
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(240, 248, 255, 0.589);
+    border-radius: 10px;
+    outline: 0px;
+    height: 30px;
+    border: 0px;
 }

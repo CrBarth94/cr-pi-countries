@@ -1,24 +1,27 @@
-.landing{
+.landing {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: rowr;
+    justify-content: space-between;
     min-height: 100vh;
-    background-color:   rgba(156, 154, 5, 0.589);
+    background-color: rgb(213, 201, 188);
 }
-.info{
-    
+.info {
+    margin-left: 30px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-
 }
-.image{
+.image {
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    margin: 50px;
     width: 20%;
-    margin-top: 10%; 
+    padding-bottom: 50px;
+    margin-right: 100px;
 }
-.boton{
+.boton {
     background-color: rgba(255, 255, 255, 0.397);
 }

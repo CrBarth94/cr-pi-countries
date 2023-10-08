@@ -17,7 +17,10 @@ export default function Landing() {
                 </p>
             </div>
             <div className={style.image}>
-                <img src="../../images/landing.png" alt="landing" />
+                <img
+                    src="https://raw.githubusercontent.com/CrBarth94/cr-pi-countries/main/client/images/landing.png?token=GHSAT0AAAAAACIAPHNBZZ6SCW5NIS3RJR7EZJDDLXQ"
+                    alt="landing"
+                />
             </div>
         </div>
     );

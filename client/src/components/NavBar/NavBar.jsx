@@ -9,7 +9,7 @@ export default function NavBar() {
                 <div className={style.imgcontainer}>
                     <NavLink to={'./home'}>
                         <img
-                            src="https://raw.githubusercontent.com/CrBarth94/cr-pi-countries/main/client/images/globo.png?token=GHSAT0AAAAAACIAPHNAG67FVVBNZ3LAXYLSZJDDKIQ"
+                            src="https://raw.githubusercontent.com/CrBarth94/cr-pi-countries/main/client/images/globo.png?token=GHSAT0AAAAAACIAPHNA6A2ZEWUYA5PZORISZJDDRPQ"
                             alt="home"
                             className={style.img}
                         />

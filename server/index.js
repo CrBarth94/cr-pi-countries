@@ -47,7 +47,7 @@ async function cargarPaises() {
     }
 }
 
-conn.sync({ force: true })
+conn.sync({ force: false })
     .then(async () => {
         await cargarPaises();
         server.listen(PORT, () => {

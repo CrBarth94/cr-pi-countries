@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 const server = require('./src/server');
 const { conn, Country } = require('./src/db.js');
-const PORT = 3001;
+const PORT = 3000;
 
 server.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -21,7 +21,8 @@ server.use((req, res, next) => {
 async function cargarPaises() {
     try {
         const jsonData = fs.readFileSync('db.json', 'utf8');
-        const countries = JSON.parse(jsonData);
+        const data = JSON.parse(jsonData);
+        const countries = data.countries;
 
         for (let i = 0; i < countries.length; i++) {
             let country = countries[i];

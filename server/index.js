@@ -1,4 +1,5 @@
 const axios = require('axios');
+const fs = require('fs');
 const server = require('./src/server');
 const { conn, Country } = require('./src/db.js');
 const PORT = 3001;
@@ -19,8 +20,8 @@ server.use((req, res, next) => {
 
 async function cargarPaises() {
     try {
-        const response = await axios.get('http://localhost:5000/countries');
-        const countries = response.data;
+        const jsonData = fs.readFileSync('db.json', 'utf8');
+        const countries = JSON.parse(jsonData);
 
         for (let i = 0; i < countries.length; i++) {
             let country = countries[i];

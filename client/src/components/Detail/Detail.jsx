@@ -11,7 +11,7 @@ export default function Detail() {
     const detallePais = async () => {
         try {
             const { data } = await axios.get(
-                `http://localhost:3001/countries/${id}`
+                `https://countries-server-eswm.onrender.com/countries/${id}`
             );
             console.log('detalle', data);
             if (data.id) {

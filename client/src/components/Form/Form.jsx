@@ -44,7 +44,7 @@ export default function Landing() {
             paises: [...actividad.paises, event.target.value]
         });
         const { data } = await axios.get(
-            `http://localhost:3001/countries/name?name=${event.target.value}`
+            `https://countries-server-eswm.onrender.com/countries/name?name=${event.target.value}`
         );
         setSeleccionados([...seleccionados, data]);
         console.log('handlepais', seleccionados);
@@ -54,7 +54,7 @@ export default function Landing() {
         if (Object.values(actividad).every((value) => value)) {
             try {
                 const response = await axios.post(
-                    'http://localhost:3001/activities',
+                    'https://countries-server-eswm.onrender.com/activities',
                     actividad
                 );
             } catch (error) {

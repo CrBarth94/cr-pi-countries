@@ -11,7 +11,9 @@ export const DEL_ACT = 'DEL_ACT';
 export const getPaises = () => {
     return async (dispatch) => {
         try {
-            const { data } = await axios.get(`http://localhost:3001/countries`);
+            const { data } = await axios.get(
+                `https://countries-server-eswm.onrender.com/countries`
+            );
             dispatch({
                 type: ALL_PAISES,
                 payload: data
@@ -26,7 +28,7 @@ export const getActividades = () => {
     return async (dispatch) => {
         try {
             const { data } = await axios.get(
-                `http://localhost:3001/activities`
+                `https://countries-server-eswm.onrender.com/activities`
             );
             dispatch({
                 type: ACTIVIDADES,
